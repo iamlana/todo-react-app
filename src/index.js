@@ -8,6 +8,7 @@ const DATA = [
   { id: "todo-2", name: "drink", completed: false }
 ];
 
+console.log()
 ReactDOM.render(
   <React.StrictMode>
     <App tasks={DATA}/>

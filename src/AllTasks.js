@@ -1,11 +1,12 @@
 import React from 'react'
 import { Task } from "./Task"
+import { FilterButton } from './FilterButton'
 
 export function AllTasks() {
 
     return (
         <div>
-            <button>All</button>
+            <FilterButton/>
             <Task name="Love" completed={false} id="first"/>
         </div>
     )
