@@ -7,10 +7,10 @@ export function Task(props) {
             <input
                 id={props.id}
                 type="checkbox"
-                defaultChecked={props.completed} />
+                defaultChecked={props.completed}
+                onChange={() => props.toggleTaskCompleted(props.id)}/>
             {props.name}
-            <button>Edit</button>
-            <button>Delete</button>
+            <button onClick={() => props.deleteTask(props.id)}>Delete</button>
         </li>
     )
 }
