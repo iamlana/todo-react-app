@@ -1,7 +1,11 @@
 import React from "react"
 
-export function FilterButton(props){
-    return(
-        <button>All tasks</button>
+export function FilterButton(props) {
+    return (
+        <button
+            aria-pressed={props.isPressed}
+            onClick={() => props.setFilter(props.name)}
+        >{props.name}
+        </button>
     )
 }
