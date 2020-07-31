@@ -1,3 +1,65 @@
 body {
   box-sizing: border-box;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+  padding: 0.8rem 1rem 0.7rem;
+  border: 0.2rem solid #4d4d4d;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+button,
+input {
+  overflow: visible;
+margin: 10px;
+}
+
+input[type="text"] {
+  border-radius: 0;
+  display: inline-block;
+  margin-top: 0.4rem;
+}
+
+button[aria-pressed="true"] {
+  text-decoration: underline;
+  border-color: #4d4d4d;
+  background-color: green;
+  color: white
+}
+
+form {
+  max-width: 100%;
+}
+
+h1 {
+  display: block;
+  max-width: 100%;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+input[type="checkbox"] {
+  cursor: pointer;
+}
+.TodoApp{
+  margin: 0 auto;
 }
